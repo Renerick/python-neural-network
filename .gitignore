@@ -1,0 +1,4 @@
+.idea
+*.bin
+models
+__pycache__

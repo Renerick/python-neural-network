@@ -4,11 +4,16 @@ import pickle
 
 @np.vectorize
 def relu_d(x):
-    return 1. if x > 0 else 0.
+    return 1. if x > 0 else 0.1
 
 
+@np.vectorize
 def relu(x):
-    return np.maximum(x, 0)
+    return x if x > 0 else x * 0.5
+
+
+def splus(x):
+    return np.log(1 + np.exp(x))
 
 
 def sig(x):

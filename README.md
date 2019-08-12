@@ -3,4 +3,4 @@ Simple implementation of neural network with numpy.
 
 Uses Anaconda
 
-Work in progress
+Work not in progress
